@@ -25,6 +25,7 @@ header .menu {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 header .menu li {
@@ -58,6 +59,7 @@ header .menu li a:hover {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
 }
 
 .banner .image {
@@ -200,9 +202,11 @@ header .menu li a:hover {
     text-align: center;
 }
 
+/* Project styling */
 .project {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 30px;
     background-color: #333;
     border-radius: 8px;
@@ -239,4 +243,58 @@ header .menu li a:hover {
 
 .project-details ul li {
     margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner .image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .banner .image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-logo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .project-logo img {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .menu {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    header .menu li {
+        margin: 10px 0;
+    }
+
+    #gioi-thieu p,
+    #giaithuong p,
+    .timeline-content ul li,
+    .project-details ul li {
+        font-size: 1rem;
+    }
+
+    .project-logo img {
+        max-width: 100px;
+    }
 }
