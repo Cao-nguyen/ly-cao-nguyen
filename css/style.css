@@ -9,16 +9,16 @@
 body {
     font-family: 'Lora', serif;
     line-height: 1.6;
-    background-color: #1c1c1c;
-    color: #e0e0e0;
+    background: linear-gradient(to bottom, #87ceeb, #b0e0e6); /* Gradient sky background */
+    color: #333;
 }
 
 /* Header styling */
 header {
-    background-color: #2a2a2a;
+    background-color: #4682b4; /* Steel blue for a sky-like header */
     padding: 15px 0;
     text-align: center;
-    border-bottom: 2px solid #444;
+    border-bottom: 2px solid #4169e1; /* Royal blue */
 }
 
 header .menu {
@@ -35,13 +35,13 @@ header .menu li {
 }
 
 header .menu li a {
-    color: #e0e0e0;
+    color: #fff; /* White text for contrast */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 header .menu li a:hover {
-    color: #ff6f61;
+    color: #ff4500; /* OrangeRed for a vibrant hover effect */
 }
 
 /* Container styling */
@@ -55,10 +55,10 @@ header .menu li a:hover {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: #2a2a2a;
+    background-color: #f0f8ff; /* Alice blue */
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     flex-wrap: wrap;
 }
 
@@ -71,7 +71,7 @@ header .menu li a:hover {
     width: 170px;
     height: 170px;
     object-fit: cover;
-    border: 4px solid #444;
+    border: 4px solid #4682b4;
 }
 
 .banner .infor {
@@ -82,12 +82,12 @@ header .menu li a:hover {
     font-family: 'Bitter', serif;
     font-size: 2.8rem;
     margin-bottom: 15px;
-    color: #ff6f61;
+    color: #4682b4; /* Steel blue for headings */
 }
 
 .banner .infor p {
     font-size: 1.3rem;
-    color: #cccccc;
+    color: #333;
 }
 
 /* Social Icons Styling */
@@ -98,42 +98,42 @@ header .menu li a:hover {
 .social-icons a {
     margin-right: 20px;
     font-size: 1.8rem;
-    color: #e0e0e0;
+    color: #333;
     transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #ff6f61;
+    color: #ff4500;
 }
 
 /* Section Styling */
 #gioi-thieu, #giaithuong, #du-an {
     margin-top: 50px;
     padding: 20px;
-    background-color: #2a2a2a;
+    background-color: #f0f8ff; /* Alice blue */
     border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 #gioi-thieu p {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: #e0e0e0;
+    color: #333;
 }
 
 /* Giải thưởng */
 #giaithuong {
     padding: 20px;
-    background-color: #2e2e2e;
+    background-color: #e0ffff; /* Light cyan */
     border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 #giaithuong h2 {
     font-family: 'Bitter', serif;
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #ff6f61;
+    color: #4682b4;
     text-align: center;
 }
 
@@ -142,37 +142,37 @@ header .menu li a:hover {
     position: relative;
     padding: 20px 0;
     margin-top: 20px;
-    border-left: 2px solid #555; /* Vertical line for timeline */
+    border-left: 2px solid #87ceeb; /* Sky blue */
 }
 
 .timeline-item {
     position: relative;
     margin-bottom: 40px;
-    padding-left: 60px; /* Space for the timeline date */
+    padding-left: 60px;
 }
 
 .timeline-date {
     position: absolute;
-    left: -50px; /* Distance from the vertical line */
+    left: -50px;
     top: 0;
     font-family: 'Bitter', serif;
     font-weight: bold;
-    color: #ff6f61;
-    background: #2e2e2e;
+    color: #4682b4;
+    background: #f0f8ff;
     padding: 8px 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 100px;
     font-size: 1.1rem;
 }
 
 .timeline-content {
-    background-color: #333;
+    background-color: #f0f8ff;
     border-radius: 8px;
     padding: 20px;
-    color: #e0e0e0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: relative;
     font-size: 1rem;
 }
@@ -189,16 +189,16 @@ header .menu li a:hover {
 /* Dự án */
 #du-an {
     padding: 20px;
-    background-color: #2e2e2e;
+    background-color: #e0ffff;
     border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 #du-an h2 {
     font-family: 'Bitter', serif;
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #ff6f61;
+    color: #4682b4;
     text-align: center;
 }
 
@@ -208,10 +208,10 @@ header .menu li a:hover {
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 30px;
-    background-color: #333;
+    background-color: #f0f8ff;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .project-logo {
@@ -227,13 +227,13 @@ header .menu li a:hover {
 
 .project-details {
     flex: 2;
-    color: #e0e0e0;
+    color: #333;
 }
 
 .project-details h3 {
     font-family: 'Bitter', serif;
     font-size: 1.5rem;
-    color: #ff6f61;
+    color: #4682b4;
 }
 
 .project-details ul {
