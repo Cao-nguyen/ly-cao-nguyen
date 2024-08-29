@@ -105,16 +105,12 @@ header .menu li a:hover {
 }
 
 /* Section Styling */
-#gioi-thieu, #giaithuong {
+#gioi-thieu, #giaithuong, #du-an {
     margin-top: 50px;
     padding: 20px;
     background-color: #2a2a2a;
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-}
-
-#gioi-thieu {
-    margin-bottom: 30px;
 }
 
 #gioi-thieu p {
@@ -123,6 +119,50 @@ header .menu li a:hover {
     color: #e0e0e0;
 }
 
-#giaithuong {
-    /* You can add content and styling for this section here */
+/* Timeline styling */
+.timeline {
+    position: relative;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #444;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 60px;
+}
+
+.timeline-date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+.timeline-content {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #e0e0e0;
+}
+
+.timeline-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.timeline-content ul li {
+    margin-bottom: 8px;
 }
