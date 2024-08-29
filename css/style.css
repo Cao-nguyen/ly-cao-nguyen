@@ -151,7 +151,7 @@ header .menu li a:hover {
 
 .timeline-date {
     position: absolute;
-    left: -90px; /* Distance from the vertical line */
+    left: -60px; /* Distance from the vertical line */
     top: 0;
     font-family: 'Bitter', serif;
     font-weight: bold;
