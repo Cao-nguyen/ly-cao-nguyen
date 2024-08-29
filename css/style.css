@@ -119,9 +119,12 @@ header .menu li a:hover {
     color: #e0e0e0;
 }
 
-/* Timeline styling */
+/* Timeline container */
 #giaithuong {
     padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
 
 #giaithuong h2 {
@@ -131,43 +134,42 @@ header .menu li a:hover {
     color: #ff6f61;
 }
 
+/* Timeline styling */
 .timeline {
     position: relative;
     padding: 20px 0;
     margin-top: 20px;
-}
-
-.timeline::before {
-    content: "";
-    position: absolute;
-    left: 30px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: #444;
+    border-left: 2px solid #444; /* Vertical line for timeline */
 }
 
 .timeline-item {
     position: relative;
     margin-bottom: 30px;
-    padding-left: 60px;
+    padding-left: 40px; /* Space for the timeline date */
 }
 
 .timeline-date {
     position: absolute;
-    left: 0;
+    left: -70px; /* Distance from the vertical line */
     top: 0;
     font-family: 'Bitter', serif;
     font-weight: bold;
     color: #ff6f61;
+    background: #2a2a2a;
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 120px;
 }
 
 .timeline-content {
-    background-color: #2a2a2a;
+    background-color: #333;
     border-radius: 8px;
     padding: 15px 20px;
     color: #e0e0e0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    position: relative;
 }
 
 .timeline-content ul {
@@ -177,4 +179,16 @@ header .menu li a:hover {
 
 .timeline-content ul li {
     margin-bottom: 10px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -100px; /* Center the dot on the timeline */
+    top: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #ff6f61;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
