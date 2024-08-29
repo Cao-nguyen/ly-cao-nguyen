@@ -9,15 +9,16 @@
 body {
     font-family: 'Lora', serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 /* Header styling */
 header {
-    background-color: #333;
-    padding: 10px 0;
+    background-color: #1f1f1f;
+    padding: 15px 0;
     text-align: center;
+    border-bottom: 1px solid #333;
 }
 
 header .menu {
@@ -27,21 +28,22 @@ header .menu {
 }
 
 header .menu li {
-    margin: 0 15px;
-    color: #fff;
+    margin: 0 20px;
+    color: #e0e0e0;
     font-family: 'Bitter', serif;
     font-weight: 600;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 header .menu li:hover {
-    color: #ffd700;
+    color: #bb86fc;
 }
 
 /* Container styling */
 .container {
     width: 80%;
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 /* Banner styling */
@@ -49,17 +51,18 @@ header .menu li:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #1f1f1f;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .banner .image img {
-    border-radius: 10px;
-    width: 150px;
-    height: 150px;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
+    border: 3px solid #333;
 }
 
 .banner .infor {
@@ -68,20 +71,34 @@ header .menu li:hover {
 
 .banner .infor h1 {
     font-family: 'Bitter', serif;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 2.7rem;
+    margin-bottom: 15px;
+    color: #bb86fc;
 }
 
 .banner .infor p {
     font-size: 1.2rem;
-    color: #555;
+    color: #b0b0b0;
 }
 
 /* Awards section styling */
 .giaithuong {
     margin-top: 40px;
-    background-color: #fff;
+    background-color: #1f1f1f;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.giaithuong h2 {
+    font-family: 'Bitter', serif;
+    color: #bb86fc;
+    margin-bottom: 15px;
+}
+
+.giaithuong p {
+    color: #b0b0b0;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
