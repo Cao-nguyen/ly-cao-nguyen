@@ -183,3 +183,60 @@ header .menu li a:hover {
 .timeline-content ul li {
     margin-bottom: 10px;
 }
+
+/* Dự án */
+#du-an {
+    padding: 20px;
+    background-color: #2e2e2e;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+#du-an h2 {
+    font-family: 'Bitter', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff6f61;
+    text-align: center;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-logo {
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.project-logo img {
+    max-width: 150px;
+    border-radius: 8px;
+}
+
+.project-details {
+    flex: 2;
+    color: #e0e0e0;
+}
+
+.project-details h3 {
+    font-family: 'Bitter', serif;
+    font-size: 1.5rem;
+    color: #ff6f61;
+}
+
+.project-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project-details ul li {
+    margin-bottom: 10px;
+}
