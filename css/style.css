@@ -9,16 +9,16 @@
 body {
     font-family: 'Lora', serif;
     line-height: 1.6;
-    background-color: #121212;
+    background-color: #1c1c1c;
     color: #e0e0e0;
 }
 
 /* Header styling */
 header {
-    background-color: #1f1f1f;
+    background-color: #2a2a2a;
     padding: 15px 0;
     text-align: center;
-    border-bottom: 1px solid #333;
+    border-bottom: 2px solid #444;
 }
 
 header .menu {
@@ -29,20 +29,23 @@ header .menu {
 
 header .menu li {
     margin: 0 20px;
-    color: #e0e0e0;
     font-family: 'Bitter', serif;
     font-weight: 600;
-    cursor: pointer;
+}
+
+header .menu li a {
+    color: #e0e0e0;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
-header .menu li:hover {
-    color: #bb86fc;
+header .menu li a:hover {
+    color: #ff6f61;
 }
 
 /* Container styling */
 .container {
-    width: 80%;
+    width: 85%;
     margin: 30px auto;
 }
 
@@ -51,22 +54,22 @@ header .menu li:hover {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: #1f1f1f;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
 
 .banner .image {
-    margin-right: 30px; /* Increased space between image and text */
+    margin-right: 30px;
 }
 
 .banner .image img {
     border-radius: 50%;
-    width: 160px;
-    height: 160px;
+    width: 170px;
+    height: 170px;
     object-fit: cover;
-    border: 3px solid #333;
+    border: 4px solid #444;
 }
 
 .banner .infor {
@@ -75,59 +78,45 @@ header .menu li:hover {
 
 .banner .infor h1 {
     font-family: 'Bitter', serif;
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     margin-bottom: 15px;
-    color: #bb86fc;
+    color: #ff6f61;
 }
 
 .banner .infor p {
-    font-size: 1.2rem;
-    color: #b0b0b0;
+    font-size: 1.3rem;
+    color: #cccccc;
 }
 
 /* Social Icons Styling */
 .social-icons {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .social-icons a {
-    margin-right: 15px;
-    font-size: 1.5rem;
+    margin-right: 20px;
+    font-size: 1.8rem;
     color: #e0e0e0;
     transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #bb86fc;
+    color: #ff6f61;
 }
 
-.social-icons .zalo-icon {
-    background: url('https://via.placeholder.com/24x24.png?text=Z') no-repeat center center;
-    background-size: cover;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-}
-
-/* Awards section styling */
-.giaithuong {
-    margin-top: 40px;
-    background-color: #1f1f1f;
+/* Section Styling */
+#gioi-thieu, #giaithuong {
+    margin-top: 50px;
     padding: 20px;
+    background-color: #2a2a2a;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
 
-.giaithuong h2 {
-    font-family: 'Bitter', serif;
-    color: #bb86fc;
-    margin-bottom: 15px;
+#gioi-thieu {
+    margin-bottom: 30px;
 }
 
-.giaithuong p {
-    color: #b0b0b0;
-    font-size: 1rem;
-    margin-bottom: 10px;
-    line-height: 1.5;
+#gioi-thuong {
+    margin-bottom: 50px;
 }
